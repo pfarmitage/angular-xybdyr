@@ -1,0 +1,41 @@
+/* global_styles.css */
+
+/* Set the background color to Discord's dark mode background color */
+body {
+  background-color: #36393f;
+}
+
+/* Set the font and color for the app title */
+h1 {
+  font-family: 'Whitney', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Set the font and color for the app description */
+p {
+  font-family: 'Whitney', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #b9bbbe;
+}
+
+/* Set the color for links */
+a {
+  color: #fff;
+}
+
+/* Set the color and hover effect for buttons */
+button {
+  color: #fff;
+  background-color: #7289da;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #677bc4;
+}

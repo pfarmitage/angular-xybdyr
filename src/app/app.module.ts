@@ -1,23 +1,30 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { LandingPageComponent } from '../app/landingpage/landingpage.component';
+import { NgModule } from '@angular/core';
+//import { environment } from '../environments/environment';
+//import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+//import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
-const routes: Routes = [
-  { path: '', component: LandingPageComponent },
-];
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { LandingPageComponent } from './landingpage/landingpage.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule,
+    //provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    //provideFirestore(() => getFirestore()),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
